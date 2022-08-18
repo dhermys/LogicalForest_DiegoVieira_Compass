@@ -105,7 +105,7 @@ function somar (limite) {
 
 // Mini-projeto 8 
 
-const array = [85, 90, 80];
+/* const array = [85, 90, 80];
 
 console.log(mediaDoAluno(array));
 
@@ -125,4 +125,18 @@ function calcularMedia(array) {
         soma += valor;
     }
     return soma/(array.length);
+} */
+
+// Mini-projeto 9
+
+exibirAsteriscos(10);
+
+function exibirAsteriscos(linhas) {
+    for(let linha = 1; linha <= linhas; linha++) {
+        let padrao = '';
+        for(let i = 0; i < linha; i++) {
+            padrao += '*';
+        }
+        console.log(padrao);
+    }
 }
