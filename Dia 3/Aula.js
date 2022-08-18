@@ -129,7 +129,7 @@ function calcularMedia(array) {
 
 // Mini-projeto 9
 
-exibirAsteriscos(10);
+/* exibirAsteriscos(10);
 
 function exibirAsteriscos(linhas) {
     for(let linha = 1; linha <= linhas; linha++) {
@@ -139,4 +139,25 @@ function exibirAsteriscos(linhas) {
         }
         console.log(padrao);
     }
+} */
+
+// Mini-projeto 10
+
+exibirNumerosPrimos(15);
+
+function exibirNumerosPrimos(limite) {
+    for (let numero = 2; numero <= limite; numero++) {
+        if (numeroPrimo(numero)) console.log(numero);
+    }
+}
+
+function numeroPrimo(numero) {
+    let ehPrimo = true;
+
+    for (let divisor = 2; divisor < numero; divisor++) {
+        if (numero % divisor === 0) {
+            return false;
+        }
+    }
+    return true;
 }
