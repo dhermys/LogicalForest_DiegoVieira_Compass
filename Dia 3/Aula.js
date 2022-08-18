@@ -41,7 +41,7 @@ function fizzBuzz(entrada) {
 
 // Mini-projeto 4
 
-verificarVelocidade(130);
+/* verificarVelocidade(130);
 
 function verificarVelocidade(velocidade) {
     const velocidadeMaxima = 70;
@@ -54,5 +54,18 @@ function verificarVelocidade(velocidade) {
             console.log('Carteira Suspensa');
         else
             console.log('Pontos', pontos);
+    }
+} */
+
+// Mini-projeto 5
+
+exibirTipo(10);
+
+function exibirTipo(limite) {
+    for (let i = 0; i <= limite; i++) {
+        if (i % 2 === 0)
+        console.log('Par');
+        else
+        console.log('Impar');
     }
 }
