@@ -72,7 +72,7 @@ function exibirTipo(limite) {
 
 // Mini-projeto 6
 
-const filme = {
+/* const filme = {
     titulo: 'Vingadores',
     ano: '2018',
     diretor: 'Robin',
@@ -85,4 +85,20 @@ function exibirPropriedades(obj) {
     for (prop in obj)
         if (typeof obj[prop] === 'string')
             console.log(prop, obj[prop])
+} */
+
+// Mini-projeto 7
+
+somar(50);
+
+function somar (limite) {
+    let multiplosDe3 = 0;
+    let multiplosDe5 = 0;
+    for (i = 0; i <= limite; i++) {
+        if(i % 3 === 0)
+        multiplosDe3 += i;
+        if(i % 5 === 0)
+        multiplosDe5 += i;
+    }
+    console.log(multiplosDe3 + multiplosDe5);
 }
