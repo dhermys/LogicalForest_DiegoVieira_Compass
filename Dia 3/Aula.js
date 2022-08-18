@@ -23,7 +23,7 @@ function max(num1, num2) {
 
 // Mini-projeto 3
 
-const resultado = fizzBuzz(20);
+/* const resultado = fizzBuzz(20);
 console.log(resultado);
 
 function fizzBuzz(entrada) {
@@ -37,4 +37,22 @@ function fizzBuzz(entrada) {
         return 'Buzz';
 
     return entrada;
+} */
+
+// Mini-projeto 4
+
+verificarVelocidade(130);
+
+function verificarVelocidade(velocidade) {
+    const velocidadeMaxima = 70;
+    const kmPorPonto = 5;
+    if (velocidade <= velocidadeMaxima)
+        console.log('ok');
+    else {
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / kmPorPonto));
+        if (pontos >= 12)
+            console.log('Carteira Suspensa');
+        else
+            console.log('Pontos', pontos);
+    }
 }
