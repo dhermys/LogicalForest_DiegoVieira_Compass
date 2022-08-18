@@ -59,7 +59,7 @@ function verificarVelocidade(velocidade) {
 
 // Mini-projeto 5
 
-exibirTipo(10);
+/* exibirTipo(10);
 
 function exibirTipo(limite) {
     for (let i = 0; i <= limite; i++) {
@@ -68,4 +68,21 @@ function exibirTipo(limite) {
         else
         console.log('Impar');
     }
+} */
+
+// Mini-projeto 6
+
+const filme = {
+    titulo: 'Vingadores',
+    ano: '2018',
+    diretor: 'Robin',
+    personagem: 'Thor'
+}
+
+exibirPropriedades(filme);
+
+function exibirPropriedades(obj) {
+    for (prop in obj)
+        if (typeof obj[prop] === 'string')
+            console.log(prop, obj[prop])
 }
