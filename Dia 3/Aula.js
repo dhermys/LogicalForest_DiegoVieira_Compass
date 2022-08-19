@@ -179,7 +179,7 @@ exibirEndereco(endereco); */
 
 // Mini-projeto 12
 
-function Endereco(rua, cidade, cep) {
+/* function Endereco(rua, cidade, cep) {
     this.rua = rua,
         this.cidade = cidade,
         this.cep = cep
@@ -201,4 +201,20 @@ function temEnderecoMemoriaIguais(endereco1, endereco2) {
     return endereco1 === endereco3
 }
 
-console.log(temEnderecoMemoriaIguais(endereco1, endereco2));
+console.log(temEnderecoMemoriaIguais(endereco1, endereco2)); */
+
+// Mini-projeto 13
+
+let postagem = {
+    titulo: 'a',
+    mensagem: 'b',
+    autor: 'c',
+    visualizacoes: 10,
+    comentarios : [
+        { autor: 'a', mensagem: 'b'},
+        { autor: 'a', mensagem: 'b'}
+    ],
+    estaAoVivo : true
+}
+
+console.log(postagem);
