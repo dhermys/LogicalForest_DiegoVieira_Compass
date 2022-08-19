@@ -143,7 +143,7 @@ function exibirAsteriscos(linhas) {
 
 // Mini-projeto 10
 
-exibirNumerosPrimos(15);
+/* exibirNumerosPrimos(15);
 
 function exibirNumerosPrimos(limite) {
     for (let numero = 2; numero <= limite; numero++) {
@@ -160,4 +160,19 @@ function numeroPrimo(numero) {
         }
     }
     return true;
+} */
+
+// Mini-projeto 11
+
+let endereco = {
+    rua: 'a',
+    cidade: 'b',
+    cep: 'c'
+};
+
+function exibirEndereco(endereco) {
+    for (let chave in endereco)
+    console.log(chave, endereco[chave]);
 }
+
+exibirEndereco(endereco);
