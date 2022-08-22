@@ -9,8 +9,6 @@ describe("About Arrays", function() {
     var emptyArray = [];
     expect(typeof(emptyArray)).toBe("object"); //A mistake? - http://javascript.crockford.com/remedial.html
     expect(emptyArray.length).toBe(0);
-    console.log(typeof(emptyArray))
-    console.log(emptyArray.length)
 
     var multiTypeArray = [0, 1, "two", function () { return 3; }, {value1: 4, value2: 5}, [6, 7]];
     expect(multiTypeArray[0]).toBe(0);
