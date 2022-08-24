@@ -1,3 +1,4 @@
+// Sobre objetos
 describe("About Objects", function () {
 
   describe("Properties", function () {
@@ -7,17 +8,19 @@ describe("About Objects", function () {
        megalomaniac = {  mastermind: "Joker", henchwoman: "Harley" };
     });
 
+    // "deve confirmar que os objetos são coleções de propriedades"
     it("should confirm objects are collections of properties", function () {
       expect(megalomaniac.mastermind).toBe('Joker');
     });
 
+    // "deve confirmar que as propriedades diferenciam maiúsculas de minúsculas"
     it("should confirm that properties are case sensitive", function () {
       expect(megalomaniac.henchwoman).toBe('Harley');
       expect(megalomaniac.henchWoman).toBe(undefined);
     });
   });
 
-
+  // "deve conhecer propriedades que são funções agem como métodos"
   it("should know properties that are functions act like methods", function () {
     var megalomaniac = {
       mastermind : "Brain",
@@ -32,6 +35,7 @@ describe("About Objects", function () {
     expect('They are Pinky and the Brain Brain Brain Brain').toMatch(battleCry);
   });
 
+  // "deve confirmar que quando uma função é anexada a um objeto, 'this' se refere ao objeto"
   it("should confirm that when a function is attached to an object, 'this' refers to the object", function () {
     var currentDate = new Date();
     var currentYear = (currentDate.getFullYear());
@@ -58,6 +62,7 @@ describe("About Objects", function () {
       };
     });
 
+    // "deveria ter a bomba"
     it("should have the bomb", function () {
 
       var hasBomb = "theBomb" in megalomaniac;
@@ -65,6 +70,7 @@ describe("About Objects", function () {
       expect(hasBomb).toBe(true);
     });
 
+    // "não deve ter o detonador"
     it("should not have the detonator however", function () {
 
       var hasDetonator = "theDetonator" in megalomaniac;
@@ -73,6 +79,7 @@ describe("About Objects", function () {
     });
   });
 
+  // "deve saber que as propriedades podem ser adicionadas e excluídas"
   it("should know that properties can be added and deleted", function () {
     var megalomaniac = { mastermind : "Agent Smith", henchman: "Agent Smith" };
 
@@ -85,7 +92,7 @@ describe("About Objects", function () {
     expect("henchman" in megalomaniac).toBe(false);
   });
 
-
+  // "deve usar protótipo para adicionar a todos os objetos"
   it("should use prototype to add to all objects", function () {
       function Circle(radius)
       {

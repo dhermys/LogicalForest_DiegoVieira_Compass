@@ -1,5 +1,6 @@
 var _; //globals
 
+// Sobre como aplicar o que aprendemos
 describe("About Applying What We Have Learnt", function() {
 
   var products;
@@ -16,6 +17,7 @@ describe("About Applying What We Have Learnt", function() {
 
   /*********************************************************************************/
 
+  // dado que sou alérgico a nozes e odeio cogumelos, deve encontrar uma pizza que eu possa comer (imperativo)
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (imperative)", function () {
 
     var i,j,hasMushrooms, productsICanEat = [];
@@ -35,6 +37,7 @@ describe("About Applying What We Have Learnt", function() {
     expect(productsICanEat.length).toBe(1);
   });
 
+  // dado que sou alérgico a nozes e odeio cogumelos, deve encontrar uma pizza que eu possa comer (funcional)
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
 
       var productsICanEat = [];
@@ -46,6 +49,7 @@ describe("About Applying What We Have Learnt", function() {
 
   /*********************************************************************************/
 
+  // deve somar todos os números naturais abaixo de 1000 que são múltiplos de 3 ou 5 (imperativo)
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (imperative)", function () {
 
     var sum = 0;
@@ -58,6 +62,7 @@ describe("About Applying What We Have Learnt", function() {
     expect(sum).toBe(233168);
   });
 
+  // deve somar todos os números naturais abaixo de 1000 que são múltiplos de 3 ou 5 (funcionais)
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
 
     var sum = FILL_ME_IN;    /* try chaining range() and reduce() */
@@ -66,6 +71,8 @@ describe("About Applying What We Have Learnt", function() {
   });
 
   /*********************************************************************************/
+
+  // deve contar a ocorrência do ingrediente (imperativo)
    it("should count the ingredient occurrence (imperative)", function () {
     var ingredientCount = { "{ingredient name}": 0 };
 
@@ -78,6 +85,7 @@ describe("About Applying What We Have Learnt", function() {
     expect(ingredientCount['mushrooms']).toBe(2);
   });
 
+  // deve contar a ocorrência do ingrediente (funcional)
   it("should count the ingredient occurrence (functional)", function () {
     var ingredientCount = { "{ingredient name}": 0 };
 
@@ -110,4 +118,28 @@ describe("About Applying What We Have Learnt", function() {
 
   });
   */
+
+  /* DESCOMENTAR PARA CRÉDITO EXTRA */
+   /*
+   it("deve encontrar o maior fator primo de um número composto", function () {
+
+   });
+
+   it("deve encontrar o maior palíndromo feito do produto de dois números de 3 dígitos", function () {
+
+   });
+
+   it("deve encontrar o menor número divisível por cada um dos números de 1 a 20", function () {
+
+
+   });
+
+   it("deve encontrar a diferença entre a soma dos quadrados e o quadrado das somas", function () {
+
+   });
+
+   it("deve encontrar o 10001º primo", function () {
+
+   });
+   */
 });
