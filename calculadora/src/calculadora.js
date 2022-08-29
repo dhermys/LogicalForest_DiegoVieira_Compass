@@ -34,4 +34,8 @@ export default class Calculadora {
         }
     }
 
+    static porc(a, b) {
+        return a * (b/100)
+    }
+
 }

@@ -116,6 +116,10 @@ describe('Testes de raiz quadrada', () => {
         let resultado = Calculadora.raiz(4)
         expect(resultado).to.be.eq(2)
     })
+    it('Deve calcular a raiz quadrada de 81 resultando em 9', () => {
+        let resultado = Calculadora.raiz(81)
+        expect(resultado).to.be.eq(9)
+    })
     it('Deve calcular a raiz quadrada de 5.5 resultando em 2.345207879911715', () => {
         let resultado = Calculadora.raiz(5.5)
         expect(resultado).to.be.eq(2.345207879911715)
@@ -123,5 +127,24 @@ describe('Testes de raiz quadrada', () => {
     it('Deve tentar calcular a raiz quadrada de -4 resultando em "Entrada inválida"', () => {
         let resultado = Calculadora.raiz(-4)
         expect(resultado).to.be.eq("Entrada inválida")
+    })
+})
+
+describe('Testes de porcentagem', () => {
+    it('Deve calcular 4% de 100 resultando em 4', () => {
+        let resultado = Calculadora.porc(100, 4)
+        expect(resultado).to.be.eq(4)
+    })
+    it('Deve calcular 50% de 100 resultando em 50', () => {
+        let resultado = Calculadora.porc(100, 50)
+        expect(resultado).to.be.eq(50)
+    })
+    it('Deve calcular 120% de 100 resultando em 120', () => {
+        let resultado = Calculadora.porc(100, 120)
+        expect(resultado).to.be.eq(120)
+    })
+    it('Deve calcular 4.5% de 100 resultando em 4.5', () => {
+        let resultado = Calculadora.porc(100, 4.5)
+        expect(resultado).to.be.eq(4.5)
     })
 })
