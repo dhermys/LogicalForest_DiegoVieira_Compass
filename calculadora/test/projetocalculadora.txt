@@ -1,0 +1,10 @@
+- Operações básicas a testar
+    - adição
+    - subtração
+    - multiplicação
+    - divisão
+
+- Operações extras a testar
+    - potenciação
+    - raiz quadrada
+    - porcentagem
